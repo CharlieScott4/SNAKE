@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Snake</title>
+
   <style>
+    
     body {
       height: 100vh;
       width: 100vw;
@@ -13,11 +16,13 @@
       justify-content: center;
       align-items: center;
       margin: 0;
-      background-color: black;
+      background-image: url('imgs/BG77.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
     }
 
     #game-board {
-      background-color: #CCC;
+      background-image: url('imgs/grass.webp');
       width: 100vmin;
       height: 100vmin;
       display: grid;
@@ -26,18 +31,23 @@
     }
 
     .snake {
-      background-color: hsl(200, 100%, 50%);
-      border: .25vmin solid black;
+      height: 40px;
+      width: 40px;
+      background-image: url('imgs/UFO2.png');
+      background-size: cover;
     }
 
     .food {
-      background-color: hsl(50, 100%, 50%);
-      border: .25vmin solid black;
+      height: 40px;
+      width: 40px;
+      background-image: url('imgs/COW2.png');
     }
   </style>
   <script src="game.js" defer type="module"></script>
 </head>
+
 <body>
   <div id="game-board"></div>
 </body>
+
 </html>
